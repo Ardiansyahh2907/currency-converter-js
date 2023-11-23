@@ -1,0 +1,136 @@
+/* Import google font poppins */
+@import url(Poppins/Poppins-Medium.ttf);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #3aac2d, #0c4c9e, #b00d8c, #ff7503);
+  background-size: 300% 300%;
+  animation: color 7s ease-in infinite;
+}
+
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.wrapper {
+  width: 370px;
+  padding: 30px;
+  border-radius: 9px;
+  background-color: #fff;
+}
+
+.wrapper header {
+  font-size: 28px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.wrapper form {
+  margin: 40px 0 20px 0;
+}
+
+form :where(input, select, button) {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+form p {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+form input {
+  height: 50px;
+  font-size: 17px;
+  padding: 0 15px;
+  background: #d6d6d6;
+  border: 2px solid #999;
+}
+
+form input:focus {
+  padding: 0 14px;
+  border: 3px solid #aa7939;
+}
+
+form .drop-list {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.drop-list .select-box {
+  display: flex;
+  height: 45px;
+  width: 115px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  background: #d6d6d6;
+  border: 2px solid #999;
+}
+
+.select-box select {
+  width: auto;
+  font-size: 16px;
+  margin: 0 -5px 0 5px;
+  background: #d6d6d6;
+}
+
+.select-box select::-webkit-scrollbar {
+  width: 8px;
+}
+
+.select-box select::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.select-box select::-webkit-scrollbar-thumb {
+  background: #aa7939;
+  border-radius: 8px;
+  border-right: 2px solid #fff;
+}
+
+.select-box img {
+  max-width: 25px;
+}
+
+.drop-list .icon {
+  cursor: pointer;
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+form .exchange-rate {
+  font-size: 17px;
+  margin: 20px 0 30px;
+}
+
+form button {
+  height: 52px;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  background: linear-gradient(45deg, #d2001a, #363377);
+}

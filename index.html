@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+
+    <!-- Link Css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- CDN Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/fadeaae328.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- Section Pembungkus -->
+    <div class="wrapper">
+      <header>Currency Converter</header>
+      <form action="#">
+        <div class="amount">
+          <p>Masukkan Jumlah Uang</p>
+          <input type="text" value="1" />
+        </div>
+
+        <div class="drop-list">
+          <!-- Bagian from/dari -->
+          <div class="from">
+            <p>Dari</p>
+            <div class="select-box">
+              <img src="https://flagsapi.com/US/flat/64.png" alt="" />
+              <select></select>
+            </div>
+          </div>
+
+          <!-- ikon exchange -->
+          <div class="icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+
+          <!-- Bagian to/ke -->
+          <div class="to">
+            <p>Ke</p>
+            <div class="select-box">
+              <img src="https://flagsapi.com/ID/flat/64.png" alt="" />
+              <select></select>
+            </div>
+          </div>
+        </div>
+        <!-- Bagian konversi uang -->
+        <div class="exchange-rate">Getting exchange rate...</div>
+        <button>Dapatkan Nilai Tukar</button>
+      </form>
+    </div>
+
+    <script src="country-list.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
